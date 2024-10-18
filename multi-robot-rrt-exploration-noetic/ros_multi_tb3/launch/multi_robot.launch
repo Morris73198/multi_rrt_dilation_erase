@@ -1,0 +1,17 @@
+<launch>
+  <!-- 包含原有的多機器人 launch 文件 -->
+  <include file="$(find ros_multi_tb3)/launch/multiple_tb3_house.launch">
+    <!-- 如果需要，可以在這裡覆蓋任何參數 -->
+  </include>
+
+  <!-- 啟動你的 Python 腳本 -->
+  <node name="multi_tb3_position_publisher" pkg="ros_multi_tb3" type="get_robot_pose.py" output="screen">
+    <!-- 如果你的腳本需要任何參數，可以在這裡添加 -->
+    <param name="robot_1_name" value="tb3_0"/>
+    <param name="robot_2_name" value="tb3_1"/>
+    <param name="robot_3_name" value="tb3_2"/>
+  </node>
+
+  <!-- 如果需要，可以在這裡添加其他節點或參數 -->
+
+</launch>

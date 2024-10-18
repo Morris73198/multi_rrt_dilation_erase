@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_multi_tb3</name>
+  <version>1.0.0</version>
+  <description>This package provides launch files for Gazebo simulation needed to test the rrt_exploration package</description>
+  <maintainer email="hikashi.billy@gmail.com">Billy Lau</maintainer>
+  <license>MIT</license>
+
+  <author email="hikashi.billy@gmail.com">Billy Lau</author> 
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <!-- 添加 tf2_ros 依赖 -->
+  <build_depend>tf2_ros</build_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <!-- 添加 tf2_ros 依赖 -->
+  <exec_depend>tf2_ros</exec_depend>
+
+  <depend>turtlebot3_gazebo</depend>
+  <depend>turtlebot3_slam</depend>
+  <depend>multirobot_map_merge</depend>
+  <depend>explore_lite</depend>
+  <depend>rviz</depend>
+
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>
