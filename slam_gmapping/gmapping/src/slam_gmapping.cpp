@@ -196,10 +196,12 @@ void SlamGMapping::init()
     odom_frame_ = "odom";
 
   private_nh_.param("transform_publish_period", transform_publish_period_, 0.05);
-  private_nh_.param("inflation_cells", inflation_cells_, 2);
 
 
-  private_nh_.param("clear_radius", clear_radius_, 4);
+  private_nh_.param("inflation_cells", inflation_cells_, 1);
+
+
+  private_nh_.param("clear_radius", clear_radius_, 2);
 
 
 
