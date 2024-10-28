@@ -1,6 +1,6 @@
 <launch>
   <!-- 包含原有的多機器人 launch 文件 -->
-  <include file="$(find ros_multi_tb3)/launch/multiple_tb3_house.launch">
+  <include file="$(find ros_multi_tb3)/launch/threerobots.launch">
     <!-- 如果需要，可以在這裡覆蓋任何參數 -->
   </include>
 

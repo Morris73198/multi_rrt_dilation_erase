@@ -48,7 +48,7 @@ class MultiTB3PositionPublisher:
                 robot['pose'].position = position
                 robot['pose'].orientation = msg.pose.pose.orientation
                 
-                # rospy.loginfo(f"{robot_name} Position: x={position.x:.2f}, y={position.y:.2f}, z={position.z:.2f}")
+                rospy.loginfo(f"{robot_name} Position: x={position.x:.2f}, y={position.y:.2f}, z={position.z:.2f}")
                 break
         
         self.publish_all_poses()
